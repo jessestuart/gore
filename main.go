@@ -8,12 +8,12 @@ If an expression is given or any variables are assigned or defined, their data w
 
 Some special functionalities are provided as commands, which starts with colons:
 
-	:import <package path>  Imports a package
-	:print                  Prints current source code
-	:write [<filename>]     Writes out current code
-	:doc <target>           Shows documentation for an expression or package name given
-	:help                   Lists commands
-	:quit                   Quit the session
+  :import <package path>  Imports a package
+  :print                  Prints current source code
+  :write [<filename>]     Writes out current code
+  :doc <target>           Shows documentation for an expression or package name given
+  :help                   Lists commands
+  :quit                   Quit the session
 */
 package main
 
@@ -44,7 +44,7 @@ import (
 	"github.com/motemen/go-quickfix"
 )
 
-const version = "0.2.6"
+const version = "0.3.0"
 const printerName = "__gore_p"
 
 var (
@@ -186,9 +186,9 @@ package main
 import %q
 
 func ` + printerName + `(xx ...interface{}) {
-	for _, x := range xx {
-		%s
-	}
+  for _, x := range xx {
+    %s
+  }
 }
 
 func main() {
